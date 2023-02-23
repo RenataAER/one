@@ -1,2 +1,2 @@
 # one
-Projeto fictício de casa de shows
+Projeto fictício de casa de shows e eventos
