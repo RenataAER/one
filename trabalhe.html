@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>ONE</title>
+</head>
+<body class="trabalhe">
+    <h1 class="dados-trabalhe">TRABALHE CONOSCO</h1>
+
+    <form action="/trabalhe" method="post" class="form-trabalhe">
+
+        <label for="nome" class="etiqueta">Nome completo</label>
+        <input type="text" class="padrao" id="nome" required placeholder="Nome completo">
+
+        <label for="telefone" class="etiqueta">Celular</label>
+        <input type="tel" class="padrao" id="telefone" required placeholder="(xx)xxxxx-xxxx">
+        
+        <label class="etiqueta">Anexe seu Portfolio</label>
+        <input type="file" name="portfolio" class="padrao" required>
+        
+        <label for="mensagem" class="etiqueta">Mensagem</label>
+        <textarea cols="79" rows="10" id="mensagem" class="mnsg" required></textarea>
+    
+        <input type="submit" value="Enviar" class="enviar">
+    
+    </form>
+</body>
+</html>
+
+
+

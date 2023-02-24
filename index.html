@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>ONE</title>
+</head>
+<body class="index">
+    <main>
+        <div class="sidebar open">
+            <div class="toggle">
+                <i class='bx bx-chevron-right'></i>
+            </div>
+            <div class="logo">
+                <img src="logo.png">
+                <h3>Bar | Balada</h3>
+            </div>
+            <nav>
+                <div class="nav-title">
+                    B B ONE 
+                </div>
+                <ul>
+                    <li class="nav-item">
+                        <i class='bx bx-book-bookmark'></i>
+                        <span><a href="historia.html" target="conteudo" class="legendas">SOBRE NÓS</a></span>
+                    </li>
+                    <li class="nav-item">
+                        <i class='bx bxs-calendar'></i>
+                        <span><a href="agenda.html" target="conteudo" class="legendas">AGENDA</a></span>
+                    </li>
+                    <li class="nav-item">
+                        <i class='bx bxs-book-content'></i>
+                        <span><a href="reserva.html" target="conteudo" class="legendas">RESERVAS</a></span>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <i class='bx bx-location-plus'></i>
+                        <span><a href="localizacao.html" target="conteudo" class="legendas">LOCALIZAÇÃO</a></span>
+                    </li>
+                    <li class="nav-item">
+                        <i class='bx bx-phone'></i>
+                        <span><a href="contato.html" target="conteudo" class="legendas">CONTATO</a></span>
+                    </li>
+                    <li class="nav-item">
+                        <i class='bx bxs-hand'></i>
+                        <span><a href="trabalhe.html" target="conteudo" class="legendas">TRABALHE CONOSCO</a></span>
+                    </li>
+                </ul>        
+                <script>
+                    const sidebar = document.querySelector('.sidebar');
+                    const navItems = document.querySelector('nav .nav-item');
+                    const toggle = document.querySelector('.sidebar .toggle');
+
+                    toggle.addEventListener('click', () => {
+                        if (sidebar.className === 'sidebar')
+                            sidebar.classList.add('open');
+                        else
+                            sidebar.classList.remove('open');
+                    });
+                </script>        
+            </nav>
+        </div>    
+        <div class="content">
+            <iframe class="frame" src="historia.html" name="conteudo"></iframe>
+        </div>
+    </main>   
+    
+</body>
+</html>
